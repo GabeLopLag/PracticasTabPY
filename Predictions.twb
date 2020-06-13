@@ -1,0 +1,609 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20194.20.0125.0835                               -->
+<workbook original-version='18.1' source-build='2019.4.3 (20194.20.0125.0835)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='predictions' inline='true' name='federated.0c6yd5x12hcyng1gvkrib0hstud8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='predictions' name='textscan.1t8py0p01bjafn18tmcwx06k5g71'>
+            <connection class='textscan' directory='D:/Downloads' filename='predictions.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1t8py0p01bjafn18tmcwx06k5g71' name='predictions.csv' table='[predictions#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_MX' separator=','>
+            <column datatype='string' name='Customer ID' ordinal='0' />
+            <column datatype='string' name='Customer Name' ordinal='1' />
+            <column datatype='integer' name='Status of account' ordinal='2' />
+            <column datatype='integer' name='Duration(months)' ordinal='3' />
+            <column datatype='integer' name='Credit History' ordinal='4' />
+            <column datatype='integer' name='Purpose' ordinal='5' />
+            <column datatype='integer' name='Credit amount' ordinal='6' />
+            <column datatype='integer' name='Savings account/bonds' ordinal='7' />
+            <column datatype='integer' name='Employment' ordinal='8' />
+            <column datatype='integer' name='Installment rate' ordinal='9' />
+            <column datatype='integer' name='Personal status/sex' ordinal='10' />
+            <column datatype='integer' name='Debtors/Guarantors' ordinal='11' />
+            <column datatype='integer' name='Residence since' ordinal='12' />
+            <column datatype='integer' name='Property' ordinal='13' />
+            <column datatype='integer' name='Age ' ordinal='14' />
+            <column datatype='integer' name='Other installment plans' ordinal='15' />
+            <column datatype='integer' name='Housing' ordinal='16' />
+            <column datatype='integer' name='Existing credits at bank' ordinal='17' />
+            <column datatype='integer' name='Job' ordinal='18' />
+            <column datatype='integer' name='People liable to provide maintenance for' ordinal='19' />
+            <column datatype='integer' name='Telephone' ordinal='20' />
+            <column datatype='integer' name='Foreign worker' ordinal='21' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[predictions.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_MX&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Customer ID]</local-name>
+            <parent-name>[predictions.csv]</parent-name>
+            <remote-alias>Customer ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Customer Name]</local-name>
+            <parent-name>[predictions.csv]</parent-name>
+            <remote-alias>Customer Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Status of account</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Status of account]</local-name>
+            <parent-name>[predictions.csv]</parent-name>
+            <remote-alias>Status of account</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Duration(months)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Duration(months)]</local-name>
+            <parent-name>[predictions.csv]</parent-name>
+            <remote-alias>Duration(months)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Credit History</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Credit History]</local-name>
+            <parent-name>[predictions.csv]</parent-name>
+            <remote-alias>Credit History</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Purpose</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Purpose]</local-name>
+            <parent-name>[predictions.csv]</parent-name>
+            <remote-alias>Purpose</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Credit amount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Credit amount]</local-name>
+            <parent-name>[predictions.csv]</parent-name>
+            <remote-alias>Credit amount</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Savings account/bonds</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Savings account/bonds]</local-name>
+            <parent-name>[predictions.csv]</parent-name>
+            <remote-alias>Savings account/bonds</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Employment</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Employment]</local-name>
+            <parent-name>[predictions.csv]</parent-name>
+            <remote-alias>Employment</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Installment rate</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Installment rate]</local-name>
+            <parent-name>[predictions.csv]</parent-name>
+            <remote-alias>Installment rate</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Personal status/sex</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Personal status/sex]</local-name>
+            <parent-name>[predictions.csv]</parent-name>
+            <remote-alias>Personal status/sex</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Debtors/Guarantors</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Debtors/Guarantors]</local-name>
+            <parent-name>[predictions.csv]</parent-name>
+            <remote-alias>Debtors/Guarantors</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Residence since</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Residence since]</local-name>
+            <parent-name>[predictions.csv]</parent-name>
+            <remote-alias>Residence since</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Property</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Property]</local-name>
+            <parent-name>[predictions.csv]</parent-name>
+            <remote-alias>Property</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age </remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age ]</local-name>
+            <parent-name>[predictions.csv]</parent-name>
+            <remote-alias>Age </remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Other installment plans</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Other installment plans]</local-name>
+            <parent-name>[predictions.csv]</parent-name>
+            <remote-alias>Other installment plans</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Housing</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Housing]</local-name>
+            <parent-name>[predictions.csv]</parent-name>
+            <remote-alias>Housing</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Existing credits at bank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Existing credits at bank]</local-name>
+            <parent-name>[predictions.csv]</parent-name>
+            <remote-alias>Existing credits at bank</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Job</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Job]</local-name>
+            <parent-name>[predictions.csv]</parent-name>
+            <remote-alias>Job</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>People liable to provide maintenance for</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[People liable to provide maintenance for]</local-name>
+            <parent-name>[predictions.csv]</parent-name>
+            <remote-alias>People liable to provide maintenance for</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Telephone</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Telephone]</local-name>
+            <parent-name>[predictions.csv]</parent-name>
+            <remote-alias>Telephone</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Foreign worker</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Foreign worker]</local-name>
+            <parent-name>[predictions.csv]</parent-name>
+            <remote-alias>Foreign worker</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Prediction' datatype='integer' name='[Calculation_1210342461064978433]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SCRIPT_INT(&quot;&#13;&#10;import numpy as np&#13;&#10;from sklearn.tree import DecisionTreeClassifier&#13;&#10;import pandas as pd&#13;&#10;data=pd.read_csv(r&apos;D:\Downloads\GermanCreditData.csv&apos;)&#13;&#10;X = data&#13;&#10;X=data.drop([&apos;Class&apos;, &apos;ID&apos;],axis=1)&#13;&#10;y=data[&apos;Class&apos;]&#13;&#10;clf = DecisionTreeClassifier(random_state=2)&#13;&#10;clf.fit(X,y)&#13;&#10;X_pred=np.transpose(np.array([_arg1,_arg2,_arg3,_arg4,_arg5,_arg6,&#13;&#10;_arg7,_arg8,_arg9,_arg10,_arg11,_arg12,_arg13, _arg14, _arg15,&#13;&#10;_arg16, _arg17, _arg18, _arg19, _arg20]))&#13;&#10;&#13;&#10;&#13;&#10;pred = clf.predict(X_pred)&#13;&#10;return pred.tolist( )&#13;&#10;&quot;,&#13;&#10;SUM([Status of account]),SUM([Duration(months)]),SUM([Credit History]),&#13;&#10;SUM([Purpose]),SUM([Credit amount]), SUM([Savings account/bonds]),&#13;&#10;SUM([Employment]), SUM([Installment rate]), SUM([Personal status/sex]),&#13;&#10;SUM([Debtors/Guarantors]), SUM([Residence since]), SUM([Property]),&#13;&#10;SUM([Age ]), SUM([Other installment plans]), SUM([Housing]),&#13;&#10;SUM([Existing credits at bank]), SUM([Job]),&#13;&#10;SUM([People liable to provide maintenance for]),&#13;&#10;SUM([Telephone]), SUM([Foreign worker]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='PredictionEndPoint' datatype='integer' name='[Calculation_1210342461074571266]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SCRIPT_INT(&quot;&#13;&#10;import numpy as np&#13;&#10;from sklearn.tree import DecisionTreeClassifier&#13;&#10;import pandas as pd&#13;&#10;data=pd.read_csv(r&apos;D:\Downloads\GermanCreditData.csv&apos;)&#13;&#10;X = data&#13;&#10;X=data.drop([&apos;Class&apos;, &apos;ID&apos;],axis=1)&#13;&#10;y=data[&apos;Class&apos;]&#13;&#10;clf = DecisionTreeClassifier(random_state=2)&#13;&#10;clf.fit(X,y)&#13;&#10;X_pred=np.transpose(np.array([_arg1,_arg2,_arg3,_arg4,_arg5,_arg6,&#13;&#10;_arg7,_arg8,_arg9,_arg10,_arg11,_arg12,_arg13, _arg14, _arg15,&#13;&#10;_arg16, _arg17, _arg18, _arg19, _arg20]))&#13;&#10;&#13;&#10;&#13;&#10;pred = clf.predict(X_pred)&#13;&#10;return pred.tolist( )&#13;&#10;&quot;,&#13;&#10;SUM([Status of account]),SUM([Duration(months)]),SUM([Credit History]),&#13;&#10;SUM([Purpose]),SUM([Credit amount]), SUM([Savings account/bonds]),&#13;&#10;SUM([Employment]), SUM([Installment rate]), SUM([Personal status/sex]),&#13;&#10;SUM([Debtors/Guarantors]), SUM([Residence since]), SUM([Property]),&#13;&#10;SUM([Age ]), SUM([Other installment plans]), SUM([Housing]),&#13;&#10;SUM([Existing credits at bank]), SUM([Job]),&#13;&#10;SUM([People liable to provide maintenance for]),&#13;&#10;SUM([Telephone]), SUM([Foreign worker]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column-instance column='[Calculation_1210342461064978433]' derivation='User' name='[usr:Calculation_1210342461064978433:ok]' pivot='key' type='ordinal'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <layout dim-ordering='alphabetic' dim-percentage='0.220745' measure-ordering='alphabetic' measure-percentage='0.779255' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='shape' field='[usr:Calculation_1210342461064978433:ok]' type='shape'>
+            <map to='circle'>
+              <bucket>1</bucket>
+            </map>
+            <map to='times'>
+              <bucket>2</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Mexico&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Hoja 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='predictions' name='federated.0c6yd5x12hcyng1gvkrib0hstud8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0c6yd5x12hcyng1gvkrib0hstud8'>
+            <column datatype='integer' name='[Age ]' role='measure' type='quantitative' />
+            <column caption='Prediction' datatype='integer' name='[Calculation_1210342461064978433]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SCRIPT_INT(&quot;&#13;&#10;import numpy as np&#13;&#10;from sklearn.tree import DecisionTreeClassifier&#13;&#10;import pandas as pd&#13;&#10;data=pd.read_csv(r&apos;D:\Downloads\GermanCreditData.csv&apos;)&#13;&#10;X = data&#13;&#10;X=data.drop([&apos;Class&apos;, &apos;ID&apos;],axis=1)&#13;&#10;y=data[&apos;Class&apos;]&#13;&#10;clf = DecisionTreeClassifier(random_state=2)&#13;&#10;clf.fit(X,y)&#13;&#10;X_pred=np.transpose(np.array([_arg1,_arg2,_arg3,_arg4,_arg5,_arg6,&#13;&#10;_arg7,_arg8,_arg9,_arg10,_arg11,_arg12,_arg13, _arg14, _arg15,&#13;&#10;_arg16, _arg17, _arg18, _arg19, _arg20]))&#13;&#10;&#13;&#10;&#13;&#10;pred = clf.predict(X_pred)&#13;&#10;return pred.tolist( )&#13;&#10;&quot;,&#13;&#10;SUM([Status of account]),SUM([Duration(months)]),SUM([Credit History]),&#13;&#10;SUM([Purpose]),SUM([Credit amount]), SUM([Savings account/bonds]),&#13;&#10;SUM([Employment]), SUM([Installment rate]), SUM([Personal status/sex]),&#13;&#10;SUM([Debtors/Guarantors]), SUM([Residence since]), SUM([Property]),&#13;&#10;SUM([Age ]), SUM([Other installment plans]), SUM([Housing]),&#13;&#10;SUM([Existing credits at bank]), SUM([Job]),&#13;&#10;SUM([People liable to provide maintenance for]),&#13;&#10;SUM([Telephone]), SUM([Foreign worker]))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='PredictionEndPoint' datatype='integer' name='[Calculation_1210342461074571266]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SCRIPT_INT(&quot;&#13;&#10;import numpy as np&#13;&#10;from sklearn.tree import DecisionTreeClassifier&#13;&#10;import pandas as pd&#13;&#10;data=pd.read_csv(r&apos;D:\Downloads\GermanCreditData.csv&apos;)&#13;&#10;X = data&#13;&#10;X=data.drop([&apos;Class&apos;, &apos;ID&apos;],axis=1)&#13;&#10;y=data[&apos;Class&apos;]&#13;&#10;clf = DecisionTreeClassifier(random_state=2)&#13;&#10;clf.fit(X,y)&#13;&#10;X_pred=np.transpose(np.array([_arg1,_arg2,_arg3,_arg4,_arg5,_arg6,&#13;&#10;_arg7,_arg8,_arg9,_arg10,_arg11,_arg12,_arg13, _arg14, _arg15,&#13;&#10;_arg16, _arg17, _arg18, _arg19, _arg20]))&#13;&#10;&#13;&#10;&#13;&#10;pred = clf.predict(X_pred)&#13;&#10;return pred.tolist( )&#13;&#10;&quot;,&#13;&#10;SUM([Status of account]),SUM([Duration(months)]),SUM([Credit History]),&#13;&#10;SUM([Purpose]),SUM([Credit amount]), SUM([Savings account/bonds]),&#13;&#10;SUM([Employment]), SUM([Installment rate]), SUM([Personal status/sex]),&#13;&#10;SUM([Debtors/Guarantors]), SUM([Residence since]), SUM([Property]),&#13;&#10;SUM([Age ]), SUM([Other installment plans]), SUM([Housing]),&#13;&#10;SUM([Existing credits at bank]), SUM([Job]),&#13;&#10;SUM([People liable to provide maintenance for]),&#13;&#10;SUM([Telephone]), SUM([Foreign worker]))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column datatype='integer' name='[Credit History]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Credit amount]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Customer ID]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Customer Name]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Debtors/Guarantors]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Duration(months)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Employment]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Existing credits at bank]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Foreign worker]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Housing]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Installment rate]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Job]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Other installment plans]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[People liable to provide maintenance for]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Personal status/sex]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Property]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Purpose]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Residence since]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Savings account/bonds]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Status of account]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Telephone]' role='measure' type='quantitative' />
+            <column-instance column='[Customer ID]' derivation='None' name='[none:Customer ID:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Customer Name]' derivation='None' name='[none:Customer Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1210342461064978433]' derivation='User' name='[usr:Calculation_1210342461064978433:ok]' pivot='key' type='ordinal'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+            <column-instance column='[Calculation_1210342461064978433]' derivation='User' name='[usr:Calculation_1210342461064978433:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' />
+            </column-instance>
+            <column-instance column='[Calculation_1210342461074571266]' derivation='User' name='[usr:Calculation_1210342461074571266:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0c6yd5x12hcyng1gvkrib0hstud8].[usr:Calculation_1210342461064978433:qk:2]' palette='red_green_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0c6yd5x12hcyng1gvkrib0hstud8].[usr:Calculation_1210342461064978433:qk:2]' />
+              <shape column='[federated.0c6yd5x12hcyng1gvkrib0hstud8].[usr:Calculation_1210342461064978433:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='6.9928369522094727' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0c6yd5x12hcyng1gvkrib0hstud8].[none:Customer ID:nk] / [federated.0c6yd5x12hcyng1gvkrib0hstud8].[none:Customer Name:nk])</rows>
+        <cols>[federated.0c6yd5x12hcyng1gvkrib0hstud8].[usr:Calculation_1210342461074571266:qk]</cols>
+      </table>
+      <simple-id uuid='{0E3616B7-9054-4041-9FBE-35015F9226E6}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Hoja 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.0c6yd5x12hcyng1gvkrib0hstud8].[usr:Calculation_1210342461064978433:ok]' type='shape' />
+            <card pane-specification-id='0' param='[federated.0c6yd5x12hcyng1gvkrib0hstud8].[usr:Calculation_1210342461064978433:qk:2]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-height' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0c6yd5x12hcyng1gvkrib0hstud8].[none:Customer ID:nk]</field>
+            <field>[federated.0c6yd5x12hcyng1gvkrib0hstud8].[none:Customer Name:nk]</field>
+            <field>[federated.0c6yd5x12hcyng1gvkrib0hstud8].[usr:Calculation_1210342461064978433:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B0F835C6-63DB-4781-9AD0-1AD78677075F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Hoja 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAae0lEQVR4nO3d+XMb553n8XcD3bgIgDh5iyKp05Yly7IV2XISX3EyHifZWeeopCab2tTM
+      1E7V/jlTtVVTtTvlTWUys3EyiZPYmdjxESc+Jd+WREkURVK8QBAg7kafz/4gyzFsSQTBCxSe
+      1y8SCXTzC6A/APp5+nkeRQghkKQO5dnuAiRpO8kASB1NBkDqaDIAUkeTAZA6mgogG4KkTqVe
+      +0+lUtnOOjaEZVkAaJq2zZV0HiEEQgg8np31pUK5lfoBDMMAwO/3b3Mlncd1XYQQeL3e7S5l
+      TXZWXCVpg8kASB1NBkDqaDIAUkeTAZA6WkMAXNtgZnbhk9YUwzDQdZ26rjN9eYLp2VnqhoWu
+      15vaualXqNYt8vn8dW/XywUuXJzActb5KCSpReqnf1haXCA3N0fBcDmyZ5B8fgVVmGTKNsMR
+      FSc5wMS5t+kbuZ1gcPWd6ysFMo4gM32FQwdGqZgCp67TFUvgVz1Eo92E/GXyS7MYjoew34Ph
+      esGx0C2Xsd1Dm/W4JQn4TAASyRRL2RV8Qmd6eprlQpljh2/D8SyDqIPiIdk7SCrW1dzeFS+2
+      nqcrliIzP8t80eTgvn0IvUDBG0EvXmKpaGIUMmjdfeTsOh5FoGCTr3tlAKRNty0dYctLi3Qn
+      e9G8yobuV3aEbZ+d2hEme4KlDbFTAyBbgaSOJgMgdTQZAKmjyQBIHU0GQOpon4wIu1UGxAgh
+      ME1zu0vpOHJATBuQzaDbRzaDStIOJAMgdTQZAKmjyQBIHU0GQOpoMgBSR2sYD1BYzjC/uEww
+      3IUjPAQUi0LVIuJ3ifbvYeriOLFwgK7uHlyjiLcrSToeueHOy0sLTC7nGB7aQySk4fF6Ea6D
+      K64mTygK1ew8RW+Y5StTHDiwn1KpjIJLMpVCVTUUZWMvmZakT2sIgN/vx9FXcOJp6qUCvpCf
+      gW6VnPCSuXQGTyBKqVTAFBqZuSlOfHH4pjt3LBNXQGZ2mmIkQL1cx+MVXJrNMtYfR/GH6Qn5
+      qZWzmI7C8nIWgQK2wWt/Psfd9z1AOKDe9G9I0no0HF2qquJPDJH0C/KhENEujenFPGMju6j5
+      NALBIEY1gOMJMNR/HL1awd8dveHO/ZEogYpBOtVDdyzE2bMT7O5LgxZioCcJCqgCUppKMt6L
+      38vVALg2Ag+qR777S5tL9gRLG0L2BEvSDiQDIHU0GQCpo8kASB1NBkDqaJ8MiHFdd7trWbdr
+      LRGOI+da3GrXBsTsNJ/0A9Trzc332c6uLZG0E1+InUYIwUdXLvDquVO4QpAMx3CFS65cIOjz
+      8/Dh+xnt3bXdZa5K9gNIa7ZUzPHTV37FbUN7efCOe/Fr/oZ+gLJe5bn3/ki2lOcHDzxBOBDa
+      7pJvSAZAWpPLmRl+feoP/P2j36fL/5cZkq/XEZYt5fnxSz/nRw9/l0Qkth3lrkqeBEtNK1RL
+      /Oqt5/ifj/2w4eC/kXQ0wf/46t/y5EtPYdrWFlS4djIAUlOEEPy/P/+a//7Qd1C9zV+gGA52
+      8Y17vsJvTj2/idW1TgZAakq2lCfoDxIPd6952739IyysLGFY7TddjQyA1JRXz53igUP3trSt
+      oigcHT3Eh9PjG1zV+jUEQC8XOHdunMXFRc5PXGZy/EMuTk7x3rvvkc1mGR8/T7GYY2Zu+YbL
+      Hn2aEC7T0zM3vY9VL/HRR+coVPT1PRJpU83mFtiV6m95+4ODezg/P7mBFW2Mhi9z9VoVU6+y
+      oqrousHeVAQnNYLPM42l6/T0JNCrJbJZCyvmI5FI3HTnVq1AJpMlGNQ4/d55Doz14woPRt3E
+      H9RwhMZIX4h63WR5fprXJmcYGx3Br6mUCgWCsRi1YpFQNEYpM0Ug1otpWOzbfzuRLm0znxfp
+      MwTgUVr/whDQ/BiWsXEFbZCGAHg1H/6AH03VcDQXNRDC44FQKER32M/E9BzJRJTRkRRLS9lV
+      d16uGPT0JigUKgz29dCd7MFjGyxmi8QSaVQFPF7w+zV8/gAjY2MkEgk0V2fuSpXU8CjpeByE
+      gzB7UH1+BgaH5Pe27SCungi3OkTVcR28nvYbK9AQgGgiTTSR/tydwj1Xf3f7bX8Z/ZWI3Xgs
+      8DXJ3n6S1/l9It3X8PPhw/GGny1DZ9/tAXpSca493fFEatW/J22eaChMSa/QHVr9db+ehZUl
+      +mKfP7a2W1u+mWr+IL3pJHJAZPu4Z+8R3rzwbsvbvzXxPnfvObKBFW2MtgyA1H5uG9rLmZkL
+      OC1cNFmp1yjrFVLR+Op33mIyAFJTvB4vjxy5n1+fem5NFxsKIfi3Pz3NEyce28TqWicDIDXt
+      8O6DeBQPL595o6kQuMLl568/y6Fd++lP9GxBhWsnAyA1TVEUvnn8UUzL5MkXn6KsV697PyEE
+      2WKO//W7HzPSM8TJg3dvcaXNk1eDSi2Zz2f4zanncYVgtGcXPd1JHNdlsZBlammWSLCLvznx
+      NWJdN543qh0o4qpbaokkn8+33aV0DMMymc0tYDs2QggCvgBDyb41XTC3neQngLQh5MRYkrQD
+      yQBIHU0GQOpoMgBSR5MBkDpaQwCEENSqVWzbplQqYVpXm7Yq5RJ1w8B1XVzHxrabm3jq2v4c
+      93oNTVdXdBeug/W5/QkcZ+dP1CW1v4bG2lIuQ6ZQJd2lcH7JpifWxejwANVynpWqRTyaIuhz
+      KdVthvp7V915IbtAtqSTSiQwbAdhVIkmkmQWMgyPjfL+u+8z3B9j2fYTwsExdYRXQ3dcNMug
+      Z2AIVzhUyjXi3V2YQqUn2Z7Ta0g7U8MngGM7qKqXlULh6i+EQ6Wmg/AyMjJErVpB1fyYRnOz
+      yDmOi6oIluamQVU5f+ECFy9cwjV1dAfSiQiLBQPNKjM1NUnd8ZFK9xCLdBGJpdBLOfLLS0xN
+      XuRKJk8uX9jwJ0DqbA0dYUII8rks4Ug3+XyeaDRKVa8T646iqV6ymQyaP4Bpu/SmrzfUpZEQ
+      gvxylnA0hurTKK/kUBCcGb/M8XuPozg2tuPi8UC5XCHc1YVh2TiOTSQcRrguQriUK1X8fh8C
+      lUj4xvPRyI6w7bNTO8JkT7C0IXZqAGQrkNTRZACkjiYDIHU0GQCpo8kASB3tkyWSbqUBMabZ
+      fpOw3uquLZHk8eys91TZDCptCNkMKkk7kAyA1NFkAKSOJgMgdTQZAKmjyQBIHa1xhZhCgRoO
+      1WqdXL5IXyJMXWh4rCqhWBKf149lVvF4PTiuh1Ty5rP96oUC3liM601TJVybSxMTpAd20/3x
+      Jc6uY2HagoBfTmwlbY2GAFi1MudzZe694yC4AlsIvK5JNpcjpfmYnp9ECwUo55a4874vr7pz
+      U9fRuiO89fILxHoHMOo20VCIyYUsD564nUh8EK9Z5JlnX+PgwWH8viB6pULdtvB6NVw8+DAQ
+      Hj+WqRPv2cVg782XZZKktWjoCKsXCtQUB2xQQ1GquXkMoeGxayj+ENGubiyzitfrxXIVelI3
+      Pxir+SWuFGqotk6kuxt/KEIhs0zFtjm0f5SJixP4A0FKxSrdyTBeRQPHplCpoggHLRjBqOSI
+      xnuolQsk+3eTioVv+PdkR9j22akdYW3bE2zbNqqqfvJvM2QAts9ODUDbngRfO+ibPfglqRVt
+      GwBJ2goyAFJHkwGQOpoMgNTRZACkjiZHhEktcRyHhcISk5kZzs9NEgl24bouumlwePcBdqUG
+      6I2l8Sjtvdx52/YDtEL2A2yNmew8v3j9We7dfxf37L0TTVUb+gF0s84rZ97kwvxlfvDAfyUe
+      7t7ukm9IBkBak3OzF/njmTf50cPfwa/95Xm+XkdYsVriX178Gd//4jfpi8t1gqUdbrmU54UP
+      XuUfHv1+w8F/I91dUf7xqz/gp396mrppbEGFaycDIDVFCMHPXv0tP3zo23g9zV/uEPQH+Na9
+      j/HLN/9zE6trnQyA1JTFlSyxrm6iwRtfjHgjw+lBVipFdLO5afW3kgyA1JRXx0/zwKETLW2r
+      KArHxu7gg6lzG1zV+n1mPEANQiGyVy6j+KMfXwYdJhTwgXDJLS0iPCrVao2B4VHikdCqf6BW
+      qxEKhXAdi5puEggGUb0eXMfBMOrYwkMkFMCybTRN27QHKq3PwkqGgcTqqwLdyL6BUX73zsuc
+      2H/XBla1fo0jwopFlFAIw7CpV7OEgmFco0C96gVFYXCgn6WShYKnqYMfoFjIU9N1rHoNo1bD
+      0YLk8kWOHdrHO+++y6GDB7iUyxHwKixnc9x+5Aia/FxqO4Kr7+St8ms+TLv9+mcaDjWPV3D5
+      0hSqpjIyMopeWcF0wOd1Uf1dLK+U6EvHm75EubSyTK1uMz87TbFax+OBSqUKgFA8DO8aoFgo
+      0tvXg1nXMR336jMttR9x9US4VbbjrOnkeavIfgCpKT9++Rd8456v3LBTa7UBMR/NnCdTyPLI
+      kS9uZplrJr9sSE05se8or59/u+XtT118n2Njhzewoo0hAyA1ZV//KOfnJ7Ede83bFqtlDNts
+      y0siZACkpng8Hh479hA/f+3ZNZ0LuK7LT//0S751319vYnWtkwGQmnZgYIxEJMaz77zUVAgc
+      1+Enr/ySe/cfIx1tz+lsZACkpimKwqN3foloMMw///4nLJfy172fEILp7Cz/9MyTHBu7g7vG
+      7tjiSpsnW4GkluTKBX5z6nkq9Sq93WlS0QSO65At5ciW8vTF0jx+98N0BZrrL9ouirjqlhoQ
+      4/PJqRW3guu6nJ+7xB/PvEmhVkIB0t0pHj58kt3pwXV1nG0V+QkgrZkQglfHT3N64gP29Y9y
+      5+htRAJhXNelUCvxzuSHXFle4JEj93N498HtLvemZACkNbFsm//70lPs7R/hy7ef+GRRvM92
+      hFmOzTOnX8B2HJ6476/wKO15uikDIDXNdV3+9x/+jUeOfJE9fbs/d9tne4KFELx18T2uLM/z
+      7ZOPb3W5TWnPWEpt6YUP/syRkds/d/DfiKIofGHfUVSvyofT45tcXWtkAKSmGJbJudkJTuw7
+      uqbtFEXh8Xse4YUPXl3XxXSbRQZAasrblz7kxP67WmrZ0bwqw6kBrizPb0Jl6yMDIDXlw5lx
+      7hy5reXt795zmHcmP9rAijZGw4X9lcwcl/IrRJUAJSySkSj5zDzJwRHmZ+fYPZhmaaVKNKBQ
+      F372jw3fdOfFhVmuVHT2DO1idn6efXvGyCwtEQ76QQ1gG1U0nx/bVVhZmqdnYBi9WiaWSOJp
+      /ybkjmJYJgFfoOXt4+EYK9XiBla0MRoCIByXcqVKOhVjZHCQ5fkMAZ+GqqpoXi+KqjEw0I9V
+      LWBZqx+hwnUQwOzcPCh8PGubwfzyArmKSSKRxLVNhOIhoCrMTF2iWCxw6OgX6PK33+AJqXWK
+      orTlOUBDAALxFMd7etGLJTJXFhnqSzFvu/g9LtF4HNvQqdQsNGERj60+0VEwFsdXy5CMR6nU
+      bRxTR/H6iSVSRHuCWLUyge4EpusBs0Is1YffH8Cnym9m7Ub1eLEdG9Xb2oIllXqVcKBrg6ta
+      P9kPIDXl+ff+xECyl0O79l/39tVGhP3nOy8z0jPEwaG9m1nmmsm3Wqkp9x08xp/OvtXStq5w
+      GZ+7xL6B0Q2uav1kAKSmhANdxLqiXFqcXvO2r42/zV2jh9pyULwMgNS0J+59jKffeo7CGlpz
+      ppdmOTNzgS8d+sImVtY6GQCpaT5V4++/8j3+5YWfMbk4c9P7CiF459KHPPvOS/zoke/Ii+G2
+      gjwJ3hqmZfKLN35HWa/ywKET7OnbjUfxIITAdh3OXrnIq+OnGO0d5q/uehCvpz0PfvjUgJh6
+      vf0mLl0rOSBma5X0Cq+dO81kZgbbcQCBT/Nx29BevrDvKMF1dJxtlU8adW+FBamFEAghbonH
+      0u5sx+bdy2eYWp5F1VR642kc1yFfKXJ+fpJIKMzxvXe2/agw+RVIWrNLi9M8/dZzPHT4JEeG
+      D+L1ehv6AUzb4o3z7/DO5Ef87Zf/hnR3crtLviEZAGlNPpg6x6mJ9/nhg99CU/8ym/f1OsIq
+      9Rr/5w//zhP3PsauVP92lLuq9j07kdpOppDl1fHT/Ojh7zYc/DcSDoT4x6/9gKde+y01Q9+C
+      CtdOBkBqihCCp157hh8++K1PxgE3w6/5+O79X+c/3vjdJlbXOhkAqSlz+UXS0WRL8/wMJvoo
+      69W2/BSQAZCa8tr423x5HUsk3b3nMO9dPrvBVa1f44CYwjKzmRXCXQEqukVQdTBcjXQiytLS
+      MkPpGJlymXLRYGDXEOl49KY7r62sUHFtItEEQc1LtVrFNE3i8Xjj/T5eRunTVlZWsGybnnR6
+      gx6qtB6LhSx9sdZfi719Izz79oucPHj3Bla1fg0B0DQfrm1S06Fet1BUB9frwajXcesVZnIq
+      fsoYpgfLWn2abLNWYmqlRm8+w2SmSlgTRGMxZuYXEdUcji+Bz+sSiYepXCig+TUuTkxz/0OP
+      MH9lipIhyC9MUzAUgoEAPq+gqht0RyPMzs5x8ksP4lfbu535VrKeNn2fpmHa1gZWszEaAuC4
+      Lh6Pl1AohFBM+noSdEe7KRWLBHePUqrUCPpS1IwyPt/qrQD+cIz9kSgruQJDAxECXodAOI5P
+      81BY1kANkEzGMQ2d+GgS16rhCpWAz8OukTFs26FWKeB3PSRSveBagEA4Fq7jIFwXaL8rDG9J
+      Hy+R1GoI1jOYZjPJfgCpKT/543/w2LGHSEbi1719tQExH0ydI1de4aHDJzezzDWTJ8FSU+7d
+      f4xXx0+3vP2pCblEkrSDjfUNM7k4jdXC9/iVSgHHdenuimxCZesjAyA1xaN4+Mbxr/Dvf/71
+      mmZ3cFyXn/zxV3z7pFwiSdrhxnp3M5Qa4Fdv/r6pENiOw5Mv/oyHDt9HIhzbggrXTp4ES2ty
+      dcbn93nr4rt8++Tj9MevTo/z6ZNgIQQTC1P85vQf+Po9X2F/Gw6Gv0YGQGpJSa/wm1PPky8X
+      6A5FSUXjOI7DcnmFkl5hd3qQx449iF9r79dCLpEkrYvjOtSM+tVPAASqVyXkD7TtGODPkp8A
+      0oZYrR+gXe2MmErSJpEBkDqaDIDU0WQApI4mAyB1tIYAmKaJEAJDrzK/kMF1LObnF6lVSyws
+      LWOYBsK1Mep1MtlcE7sXVKtVbNPAuUlbk2V95voSIchmFjEs53P3dWwL23GbeWyStKqGC7SN
+      Upa84yGbLaJqPur1KiqQWXFQ9QoT1QoH+yKMT+SwjRqJdJKbjQpwLIOzZy8wNhDHDHRj6nVC
+      fi/1aoVwNMLi0grpVIKpK/Ps7k9iCw9V3WJkMMXM3Dx7/AGuLK+Q6kniVaCYz6GoHiw3RCoW
+      IBSOyKWUpHVp+AQIJ/uYmpxhbHcfRjGHDVQKK1R1nUypSpdwuHR5Do+qIBwLe5U34nxmHkWx
+      yeSrXJma4PLMHLZZ5/LEeS5fniKaiDE3v4ymadQtF9uoUS8XsDwa3SE/V6anGD/3Acu5AkvZ
+      PB+dOUO+WEFVLC7PZuTBL63bZzrCBI7j4lHAtB18moppWmiahqKAEGDZNj5VxbKdVUeFua6L
+      oihX/wVMQ2elXCcVj+LxelE8HoTr4jguqupFASzHQVNVLNNE1TRs20ZVVQTg2jaK10u9UsRS
+      AsSjjeOIZUfY9tmpHWGyJ1jaEDs1ALIVSOpoMgBSR5MBkDqaDIDU0WQApI6mwtVhbrfSgBjT
+      NLe7lI6hm3UuZ65g2RYCQdAXZKx3GG2HrNIjm0Gllsxk5/j1qT+ger0cGNxDb3cKx3FYKCxx
+      Yf4yflXjifseu+FEWu1CBkBaEyEEvz39AoVqkW+ffPyThfA+Oyi+WCvz01d+xdHRQ203Ie6n
+      yQBITRNC8IvXf0d/ooeTB+5umCf0eh1hQgiefus5EuFYy1OrbzZ5Eiw17d3LZ/Brvs8d/Dei
+      KAr/5QtfZWJxitncwhZUuHYyAFJTHNfh5Y9e5/F7Hl7TDNGKovC9L36TX77x+02srnUyAFJT
+      zsxc4M6R21qa7iTkDxIPR8kWmxlDsrVkAKSmnL70Icf3HW15++N7j/L2pQ83sKKN0Tggplbm
+      zNnz9AwMUK3USaRiOIaB5vdTK+UxhA9XL6GG44wND66688ryIpezeUZ27yMS0sjn8yQSicb7
+      VCqEQwHOnh0nHE8xPNi3sY9Q2hAVvUok0NXy9n3xNG+cf3sDK9oYDQHw+X2k+4dwbJOgsFgp
+      LOM4GjHAMEwM4eIaJvibmyLbNgyq9ToLs9NcrpVACzK3sEhufprkwCAuIYxyjqPHjmKYJn6j
+      zou//y3p/mF84Qh6pYrmcVG8PjLzs/QODGIZNoeOHmZndLPcQpT1LZHkVTw4ov2GsjYcRyvL
+      OSqVCulknGxFp2+gD8W0QPOBY6IKFdcrUAOBpnYeiMQ5FIujV2rkgUjIh41G2K8SinYT6U6R
+      W/CA4iXcFcIfCDA8sodQJEYyncIwbar5DLY3QED1EOjqolq35aJI20BBwRVuy1Me1i2DQBvO
+      Eyr7AaSmPP3mc9w5ehsjPbuue/tqA2JeOfMm4WAXx8bu2Mwy10yeBEtNuf+247z80RstbSuE
+      4P2ps9wxfGCDq1o/GQCpKclIDNO2yJVX1rzt+blLDKUG8Kmrryy61WQApKYoisL3v/RNnnzx
+      qTWtE1aqlXn27Zf4+j2PbGJ1rZMBkJoWCYb57v1f55+efZKKXl31/ouFLP/83L/yd49+D60N
+      1wgGeRIstWClUuTHL/+C0Z5dPHr0SwR9gYaT4GKtzDOnX6Bq1PhvD3yLgK99Xw8ZAKklQggu
+      LlzmpQ9fw7BMFEXh6pEkCAe7+NrRBxhI9K6r72Ar3FJLJAkhEELg8chvdltJCIErBHz83Lf7
+      Qf9pt9QnwLWHspNegFvFTn3ub6kASNJa3XLfFWYmL/L+mXFkqrfW3OxFciv6dpexZrdcAPD6
+      iIaau1ZJ2jjJVHpHHkw7seab6k0n6IrG2FnfRHe+fLZARS9tdxlrJs8BpI52y30CSNJayABI
+      Ha09L9CQpFbVlvnXZ15hqG+QvftGsaoFUv1DvP7C8yTHDrK7N8bs1AR5N8pYX1QGQLoVeQmK
+      OrmVZd47/R7Rro9I9fSSmZtneXGB4wf6cPQIU+Nv8P8Bm7eAGKtKUm0AAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
